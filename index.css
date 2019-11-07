@@ -23,8 +23,17 @@
     left: 0;
     right: 0;
     z-index: 10;
+    min-height: 50px;
   }
-  
+ 
+  li {
+    display: inline-block;
+    
+  }
+
+  nav .links {
+    
+  }
   
   
   header {
@@ -39,5 +48,12 @@
   
   section:nth-child(even) {
     background-color: #ddd;
+  }
+
+  .project img {
+    display: block;
+    margin: 0 auto 0;
+    width: 35%;
+    height: 30%;
   }
   

@@ -4,35 +4,59 @@
     <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
-    <main role="main">
-        <header role="banner">
-            <h1>Hero</h1>
+    <nav role="navigation" class="navBar"></nav>
+        <div class="container">
+            <div class="name"><a href="https://github.com/mreichba">Mason Reichbauer</a></div>
+            <ul class="links">
+                <li><a class="jumper" href="#resume">Resume</a></li>
+                <li><a class="jumper" href="#portfolio">Portfolio</a></li>
+                <li><a target="_blank" href="https://github.com/mreichba">Github</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/mason-reichbauer-145762101/">LinkedIn</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <header role="banner" class="hero">
+            <h1>Hello, and welcome! My name is Mason.</h1>
+            <img src="./images/right-brain-left-brain.png">
         </header>
 
-        <section>
-            Section 1
+        <section class="bio">
+            <h2>About Me:</h2>
+                <p>I have always carried a passion in my heart for technology and discovery.  Carrying and building on the facts of today and imagining the ones that could be, tomorrow. I have a scientific mind that embraces an order to things and at the same time, a creative side that ventures into the unknown for new and different possibilities. Programming, to me, is a form of art in which something is created from nothing, and the possibilities are truly endless.  </p>
         </section>
 
-        <section>
-            Section 2
-        </section>
+        <section class="project projectOne">
+            <h2>The Matrix Quiz App</h2>
+            <p>A brief quiz testing your knowledge of The Matrix movies.</p>
+            <img src="images/matrix-app-snapshot.PNG">
+            <a href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/">Demo</a>
 
-        <section>
-            Section 3
-        </section>
-
-        <section>
-            Project 3
-        </section>
         
-        <section>
-            Section 4
+        </section>
+
+        <section class="project projectTwo">
+            <h2>Project #2</h2>
+            <img src="images/coming-soon.png">
+        </section>
+
+        <section class="project projectThree">
+            <h2>Project #3</h2>
+            <img src="images/coming-soon.png">
+        </section >
+        
+        <section class="project projectFour">
+            <h2>Project #4 </h2>
+            <img src="images/coming-soon.png">
         </section>
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info">
+        Contact me: <a href="mreichba@mail.usf.edu">mreichba@mail.usf.edu</a>
+        <!-- modify to open in email -->
+
+    </footer>
 </body>
 </html>
