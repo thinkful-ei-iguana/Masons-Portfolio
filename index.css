@@ -1,59 +1,109 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  background-color: #D5D6D8;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.hero {
+  padding: 40px 0 80px;
+}
+
+nav, footer {
+  padding: 1% 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  min-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
   
-  body {
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 20px;
-    color: #444;
-    text-align: center;
-    line-height: 1.5;
-  }
-  
-  nav,
-  footer {
-    padding: 1% 0;
-    background-color: #aaa;
-  }
-  
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    min-height: 50px;
-  }
+}
+
+.name {
+  display: inline;
+  margin: 5px 0px 5px 15px;
+
+}
+
+.name a {
+  color: white;
+  text-decoration: none;
+}
+
+.links {
+  display: inline;
+  justify-content: right;
+  margin: 5px;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  display: inline;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto 0;
+  width: 35%;
+  height: 30%;
+}
+
+.project a {
+  padding: 0 20px 0;
+}
+header img {
  
-  li {
-    display: inline-block;
+  width: 70%;
+
+}
+
+/* phone screen */
+@media screen and (min-width: 320px) {
+  .navBar {
     
   }
+}  
+  
+/*tablet screen*/
+@media screen and (min-width: 500px) {
+  
+}
 
-  nav .links {
-    
-  }
+/*desktop screen*/
+@media screen and (min-width: 900px) {
   
-  
-  header {
-    padding: 12% 0;
-  }
-  
-  section {
-    min-height: 200px;
-    padding: 6% 0;
-    background-color: #bbb;
-  }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
-  }
-
-  .project img {
-    display: block;
-    margin: 0 auto 0;
-    width: 35%;
-    height: 30%;
-  }
-  
+}
