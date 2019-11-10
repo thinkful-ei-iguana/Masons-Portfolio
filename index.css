@@ -82,6 +82,13 @@ section:nth-child(odd) {
   background-color: #ddd;
 }
 
+.bio p {
+  text-align: left;
+  margin: 0 auto 0;
+  padding: 0 5px;
+  max-width: 900px;
+}
+
 .project img {
   display: block;
   margin: 0 auto 0;
@@ -91,75 +98,151 @@ section:nth-child(odd) {
   padding: 0 20px 0;
 }
 
-footer a{
+footer a {
   color: white;
 }
 
+
 /* phone screen */
 @media screen and (min-width: 320px) {
-  .links {
-    font-size: 14px;
-  }
-  .name {
-    font-size: 16px;
-    font-weight: bold;
-  }
-
   .bio p, .project p {
     font-size: 16px;
   }
+
   h1 {
     font-size: 32px;
     margin: 20px 0 0;
   }
+
   h2 {
     font-size: 26px;
   }
+
   header img {
     width: 100%;
   }
+
   .hero {
     padding: 30px 0 30px;
   }
+
   .project img {
     display: block;
     margin: 0 auto 0;
     width: 100%;
+  }
+
+  .name {
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+
+    float: left;
+    padding: 10px;
+  }
+ 
+  .links {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+    font-size: 14px;
+
+  }
+
+  li {
+    display: block;
+    text-align: right;
+  }
+
+  .navBar{
+    display: inline-block;
+  }
+
+  .burgerIcon {
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;  
+  }
+  .burgerIcon:hover {
+    color: red;
+  }
+  .links a:hover {
+    color: limegreen;
+  }
+  .name {
+    background: linear-gradient(orange,red,green,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  footer a:hover {
+    color: rgb(155, 104, 9);
   }
 }  
   
 /*tablet screen*/
 @media screen and (min-width: 550px) {
-  .links {
-    font-size: 16px;
-  }
-  .name {
+   .bio p, .project p {
     font-size: 18px;
-    font-weight: bold;
   }
 
-  .bio p, .project p {
-    font-size: 18px;
-  }
   h1 {
     font-size: 36px;
     margin: 20px 0 20px;
   }
+
   h2 {
     font-size: 28px;
   }
+
   header img {
     width: 100%;
     margin: 20px 0 20px;
   }
+
   .hero {
     padding: 30px 0 30px;
   }
+
   .project img {
     display: block;
     margin: 0 auto 0;
     width: 80%;
   }
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+  }
+
+  .links {
+    display: inline;
+    justify-content: right;
+    margin: 5px;
+    padding: 0;
+    font-size: 16px;
+    align-self: center;
+  }
+
+  .burgerIcon {
+    color: white;
+    padding: 10px;
+    display: flex; 
+  }
+  
+.navBar {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-between;  
+}
+
+li {
+  display: block;
+}
   
 }
 
@@ -168,28 +251,35 @@ footer a{
   .links {
     font-size: 18px;
   }
-  .name {
-    font-size: 20px;
-  }
 
   .bio p, .project p {
     font-size: 20px;
   }
+
   h1 {
     font-size: 36px;
     margin: 20px 0 0;
   }
+
   h2 {
     font-size: 28px;
   }
+
   header img {
     width: 600px;
     height: 450px;
     margin: 0px 0 0px;
   }
-  .hero {
-    padding: 20px 0;
+  
+  .name {
+    font-size: 20px;
+    float: left;
   }
+
+  .hero {
+    padding: 30px 0;
+  }
+
   .project img {
     display: block;
     margin: 0 auto 0;
