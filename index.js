@@ -8,6 +8,8 @@ function burgerClick() {
     
 }
 
+
+
 // function showList() {
 //     let burgerIcon = document.getElementById("burger")
 //     if (burgerIcon.style.display === "none") {
