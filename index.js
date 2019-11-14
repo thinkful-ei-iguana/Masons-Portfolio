@@ -1,10 +1,10 @@
 function burgerClick() {
-    let links = document.getElementById("links");
-    if (links.style.display === "none"){
-        links.style.display = "block";  
-    } else {
-        links.style.display = "none";
-    }
+  let links = document.getElementById('links');
+  if (links.style.display === 'none'){
+    links.style.display = 'block';  
+  } else {
+    links.style.display = 'none';
+  }
     
 }
 
@@ -16,4 +16,4 @@ function burgerClick() {
 // }
 
 // document.addEventListener("DOMContentLoaded", showList)
-document.addEventListener("DOMContentLoaded", burgerClick)
+document.addEventListener('DOMContentLoaded', burgerClick);
