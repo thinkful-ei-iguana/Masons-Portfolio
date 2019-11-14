@@ -115,7 +115,11 @@ footer a {
 }
 
 footer a:hover {
-  color: rgb(155, 104, 9);
+  color: rgb(219, 132, 33);
+}
+.github, .linkedIn, .email {
+  padding-left: 10px;
+  text-decoration: none;
 }
 
 /* phone screen */
@@ -187,7 +191,7 @@ footer a:hover {
     color: red;
   }
   .links a:hover {
-    color: limegreen;
+    color: red;
   }
    
 }  
