@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mason's Portfolio</title>
@@ -10,17 +9,18 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+
     <nav aria-live="polite" navigation" class="navBar">
         <div class="name"><a href="https://github.com/mreichba">Mason Reichbauer</a></div>
         <a role="navigation" class="burgerIcon" id="burger" onclick="burgerClick()">&#9776</a>
         <ul aria-live="polite" class="links" id="links">
-            <li><a class="jumper" href="#resume">Resume</a></li>
+            <li><a class="jumper" href="#contactMe">Contact Me</a></li>
             <li><a class="jumper" href="#portfolio">Portfolio</a></li>
             <li><a target="_blank" href="https://github.com/mreichba">Github</a></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/mason-reichbauer-145762101/">LinkedIn</a></li>
-        </ul>
-        
+        </ul>   
     </nav>
+
     <main role="main" class="container">
         <header role="banner" class="hero">
             <h1>Hello, my name is <span class="accent">Mason</span> and I am a <span class="accent">Full-Stack Engineer</span>.</h1>
@@ -41,7 +41,6 @@
             <a href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/">Demo</a>
             <a href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App">Code</a>
             <p>HTML5, CSS3, JavaScript, JQuery</p>
-        
         </section>
 
         <section class="project projectTwo">
@@ -59,11 +58,11 @@
             <img src="images/coming-soon.png">
         </section>
     </main>
-    <footer role="content-info">
-        Contact me: <a href="mailto:mreichba@mail.usf.edu">mreichba@mail.usf.edu</a>
-        <!-- modify to open in email -->
 
+    <footer role="contactMe" id="contactMe">
+            <span class="accent">Contact Me:</span> <a href="mailto:mreichba@mail.usf.edu">mreichba@mail.usf.edu</a>
     </footer>
+
     <script src="index.js"></script> 
 </body>
 </html>
