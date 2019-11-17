@@ -43,7 +43,7 @@ nav, footer {
   display: inline;
   margin: 5px 0px 5px 15px;
   font-family: 'Permanent Marker', cursive;
-  background: linear-gradient(orange,red,green,blue);
+  background: repeating-linear-gradient(#FDF411 ,#0B8FBE 25%,#C90B6A 35%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -102,7 +102,7 @@ section:nth-child(odd) {
   padding: 0 20px 0;
 }
 footer .accent {
-  background: linear-gradient(orange,red,green,blue);
+  background: repeating-linear-gradient(#FDF411,#0B8FBE 70%,#C90B6A 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -122,7 +122,7 @@ footer a:hover {
   text-decoration: none;
 }
 .links a:hover {
-  color: red;
+  color: #0B8FBE;
 }
 
 /* phone screen */
@@ -192,10 +192,10 @@ footer a:hover {
     justify-content: flex-end;  
   }
   .burgerIcon:hover {
-    color: red;
+    color: #0B8FBE;
   }
   .links a:hover {
-    color: red;
+    color: #0B8FBE;
   } 
 }  
 
