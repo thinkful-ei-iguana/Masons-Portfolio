@@ -5,10 +5,8 @@
   font-family: 'Permanent Marker', cursive;
 }
 
-
 body {
-  font-family: "Open Sans",
-  sans-serif; 
+  font-family: "Open Sans", sans-serif; 
   font-size: 20px;
   color: #444;
   background-color: #D5D6D8;
@@ -17,7 +15,7 @@ body {
 }
 
 .hero {
-  padding: 40px 0 80px;
+  padding: 80px 0 80px;
 }
 
 nav, footer {
@@ -26,27 +24,27 @@ nav, footer {
 }
 
 .navBar {
+  display: inline-block;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
-  min-height: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0px;
+  z-index: 10;
+  padding: 5px;
   
 }
 
 .name {
-  display: inline;
-  margin: 5px 0px 5px 15px;
+  margin: 5px;
+  align-self: center;
+  float: left;
+  padding: 0px;
   font-family: 'Permanent Marker', cursive;
-  background: repeating-linear-gradient(#FDF411 ,#0B8FBE 25%,#C90B6A 35%);
+  font-size: 25px;
+  font-weight: bold;
+  background: repeating-linear-gradient(#FDF411 20%,#0B8FBE 55%,#C90B6A 85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .name a {
@@ -54,31 +52,65 @@ nav, footer {
   text-decoration: none;
 }
 
+.burgerIcon {
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 35px;
+}
+
+.burgerIcon:hover {
+  color: #0B8FBE;
+}
+.links a:hover {
+  color: #0B8FBE;
+} 
+
 .links {
-  display: inline;
-  justify-content: right;
+  display: flex;
+  flex-direction: column;
   margin: 5px;
-  padding: 0;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.null {
+  display: none;
 }
 
 li {
   display: inline;
+  text-align: right;
 }
 
 li a {
-  display: inline;
   padding: 8px;
   color: white;
   text-decoration: none;
 }
 
+h1 {
+  font-size: 32px;
+  margin: 0px auto 30px;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 26px;
+}
+
 header img {
-  width: 50%;
+  width: 80%;
 }
 
 section {
   min-height: 200px;
-  padding: 4% 0;
+  padding: 5% 0;
   background-color: #bbb;
 }
 
@@ -89,13 +121,19 @@ section:nth-child(odd) {
 .bio p {
   text-align: left;
   margin: 0 auto 0;
-  padding: 0 5px;
+  padding: 0 15px;
   max-width: 900px;
+  font-size: 16px;
 }
 
 .project img {
   display: block;
   margin: 0 auto 0;
+  width: 80%;
+}
+
+.project p {
+  font-size: 16px;
 }
 
 .project a {
@@ -105,9 +143,14 @@ footer .accent {
   background: repeating-linear-gradient(#FDF411,#0B8FBE 70%,#C90B6A 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 25px;
 }
 footer {
+  position: absolute;
   color: white;
+  width: 100%;
+  left: 0px;
+  
 }
 
 footer a {
@@ -117,110 +160,39 @@ footer a {
 footer a:hover {
   color: rgb(219, 132, 33);
 }
-.github, .linkedIn, .email {
-  padding-left: 10px;
+
+.contactLinks {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0px;
   text-decoration: none;
+  font-size: 40px;
 }
+
+footer span {
+  display: inline;
+}
+
+span.email {
+  display: none;
+}
+
 .links a:hover {
-  color: #0B8FBE;
+  font-family: 'Permanent Marker', cursive;
+  background: repeating-linear-gradient(#FDF411 20%,#0B8FBE 55%,#C90B6A 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-/* phone screen */
-@media screen and (min-width: 320px) {
-  .bio p, .project p {
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 32px;
-    margin: 20px 0 0;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  header img {
-    width: 100%;
-  }
-
-  .hero {
-    padding: 30px 0 30px;
-  }
-
-  .project img {
-    display: block;
-    margin: 0 auto 0;
-    width: 100%;
-  }
-
-  .name {
-    font-size: 16px;
-    font-weight: bold;
-    align-self: center;
-    float: left;
-    padding: 10px;
-  }
-
-  .links {
-    display: block;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 5px;
-    padding: 0;
-    overflow: hidden;
-    font-size: 14px;
-  }
-  .null {
-    display: none;
-  }
-
-  li {
-    display: block;
-    text-align: right;
-  }
-
-  .navBar{
-    display: inline-block;
-  }
-
-  .burgerIcon {
-    color: white;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;  
-  }
-  .burgerIcon:hover {
-    color: #0B8FBE;
-  }
-  .links a:hover {
-    color: #0B8FBE;
-  } 
-}  
+ 
 
 /*tablet screen*/
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 655px) {
   .bio p, .project p {
     font-size: 18px;
   }
 
-  h1 {
-    font-size: 36px;
-    margin: 20px 0 20px;
-  }
-
   h2 {
     font-size: 28px;
-  }
-
-  header img {
-    width: 100%;
-    margin: 20px 0 20px;
-  }
-
-  .hero {
-    padding: 30px 0 30px;
   }
 
   .project img {
@@ -229,7 +201,6 @@ footer a:hover {
     width: 80%;
   }
   .name {
-    font-size: 18px;
     font-weight: bold;
     float: left;
   }
@@ -239,7 +210,6 @@ footer a:hover {
     justify-content: right;
     margin: 5px;
     padding: 0;
-    font-size: 16px;
     align-self: center;
     
   }
@@ -254,25 +224,30 @@ footer a:hover {
     justify-content: space-between;  
   }
 
-  li {
-    display: inline;
+  .fa-envelope {
+    display: none;
   }
-  
+
+  span.email {
+    display: inline;
+    font-size: 20px;
+  }
+
+  .contactLinks {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  footer a {
+    padding-left: 30px;
+  }
+
 }
 
 /*desktop screen*/
 @media screen and (min-width: 900px) {
-  .links {
-    font-size: 18px;
-  }
-
   .bio p, .project p {
     font-size: 20px;
-  }
-
-  h1 {
-    font-size: 36px;
-    margin: 20px 0 0;
   }
 
   h2 {
@@ -283,15 +258,6 @@ footer a:hover {
     width: 600px;
     height: 450px;
     margin: 0px 0 0px;
-  }
-
-  .name {
-    font-size: 20px;
-    float: left;
-  }
-
-  .hero {
-    padding: 30px 0;
   }
 
   .project img {
