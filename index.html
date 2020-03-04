@@ -19,10 +19,11 @@
         </div>
         <a role="navigation" class="burgerIcon" id="burger" onclick="burgerClick()"> &#9776; </a>
         <ul aria-live="polite" class="links" id="links" onclick="burgerClick()">
+            <li><a class="jumper" href="#bio">About Me</a></li>
             <li><a class="jumper" href="#contactMe">Contact</a></li>
             <li><a class="jumper" href="#portfolio">Portfolio</a></li>
-            <li><a href="https://github.com/mreichba" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/mason-reichbauer-145762101/" target="_blank">LinkedIn</a>
+            <!-- <li><a href="https://github.com/mreichba" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/mason-reichbauer-145762101/" target="_blank">LinkedIn</a> -->
             </li>
         </ul>
     </nav>
@@ -30,13 +31,15 @@
     <main class="container">
         <header class="hero">
             <h1>Hello, my name is <span class="accent">Mason</span> and I am a <span class="accent">Full-Stack
-                    Engineer</span>.</h1>
+                    Engineer</span>.
+            </h1>
             <img src="./images/right-brain-left-brain.png" alt="right brain vs. left brain">
         </header>
 
         <section class="bio" id="bio">
             <h2>About Me</h2>
-            <p>I have always carried a passion in my heart for technology and discovery. My interest in coding
+            <p>
+                I have always carried a passion in my heart for technology and discovery. My interest in coding
                 specifically was sparked when I saw the movie “Hackers” as a kid, and it seemed like anything was
                 possible with the right code. I have a scientific mind that embraces an order to things, and at the same
                 time a creative side that ventures into the unknown for new and different possibilities. I look forward
@@ -46,9 +49,12 @@
                 me, is an art form in which something is created from nothing and the possibilities are truly endless.
             </p><br>
 
-            <p>When I'm not writing code you can find me spending time with friends and family, traveling to new places,
+            <p>
+                When I'm not writing code you can find me spending time with friends and family, traveling to new
+                places,
                 as well as going to music festivals and concerts. At home I enjoy listening to new music and playing
-                guitar, discovering new shows, and playing games online with friends.</p>
+                guitar, discovering new shows, and playing games online with friends.
+            </p>
         </section>
 
         <section class="project projectOne" id="portfolio">
@@ -62,23 +68,31 @@
 
         <section class="project projectTwo">
             <h2>Live Alert App</h2>
-            <img src="images/tempsnip.png" alt="live alert app">
+            <img src="images/live-alert-snip.png" alt="live alert app">
             <a target="_blank" href="https://live-alert.now.sh/">Demo</a>
-            <a target="_blank" href="https://github.com/thinkful-ei-iguana/mason-capstone-server-project-1">Server
-                Code</a>
-            <a target="_blank" href="https://github.com/thinkful-ei-iguana/mason-capstone-react-app-project-1">Client
-                Code</a>
-            <p>React, Babel, JSX, Node, Express, PostgreSQL, Chai, Mocha, Supertest</p>
+            <a target="_blank"
+                href="https://github.com/thinkful-ei-iguana/mason-capstone-server-project-1">Server-Code</a>
+            <a target="_blank"
+                href="https://github.com/thinkful-ei-iguana/mason-capstone-react-app-project-1">Client-Code</a>
+            <p>React, Babel, JSX, CSS3, Node, Express, PostgreSQL, Chai, Mocha, Supertest</p>
         </section>
 
         <section class="project projectThree">
-            <h2>Project #3</h2>
-            <img src="images/coming-soon.png" alt="coming soon">
+            <h2>Language Learning (French)</h2>
+            <img src="images/LearningLanguage.PNG" alt="Learning language">
+            <a target="_blank" href="https://mason-austin-learning.now.sh/register">Demo</a>
+            <a target="_blank" href="https://github.com/thinkful-ei-iguana/mason-austin-spaced-server">Server-Code</a>
+            <a target="_blank" href="https://github.com/thinkful-ei-iguana/mason-austin-spaced-client">Client-Code</a>
+            <p>React, Babel, JSX, CSS3, Node, Express, Linked List, PostgreSQL, Chai, Mocha, Supertest</p>
         </section>
 
         <section class="project projectFour">
-            <h2>Project #4 </h2>
-            <img src="images/coming-soon.png" alt="coming soon">
+            <h2>Someone Like You (SLY)</h2>
+            <img src="images/SLY.PNG" alt="coming soon">
+            <a target="_blank" href="#">Demo</a>
+            <a target="_blank" href="https://github.com/thinkful-ei-iguana/MASK-SLY-API">Server-Code</a>
+            <a target="_blank" href="https://github.com/thinkful-ei-iguana/MASK-SLY-client">Client-Code</a>
+            <p>React, Babel, JSX, CSS3, Node, Express, PostgreSQL, Chai, Mocha, Supertest</p>
         </section>
     </main>
 
@@ -96,10 +110,6 @@
                 <i class="fa fa-github-square"></i>
             </a>
         </div>
-
-
-
-
     </footer>
 
     <script src="index.js"></script>
