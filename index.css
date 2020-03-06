@@ -14,7 +14,6 @@ body {
   font-family: "Open Sans", sans-serif; 
   font-size: 20px;
   color: white;
-  /* background-color: #D5D6D8; */
   text-align: center;
   line-height: 1.5;
 }
@@ -22,7 +21,6 @@ body {
 .hero {
   display: block;
   padding: 80px 0 0px;
-  /* height: 100vh; */
 }
 
 .heroInfo{
@@ -83,9 +81,6 @@ nav, footer {
 .burgerIcon:hover {
   color: rgb(219, 132, 33);
 }
-.links a:hover {
-  color: #0B8FBE;
-} 
 
 .links {
   display: flex;
@@ -112,9 +107,7 @@ li a {
 }
 
 h1 {
-  /* font-size: 32px; */
   margin: 0px auto 30px;
-  /* max-width: 400px; */
   text-align: center;
 }
 
@@ -122,7 +115,6 @@ h2 {
   font-size: 26px;
   background-image: url('images/Sun\ \(2\).jpg');
   background-size: cover;
-  /* background: repeating-linear-gradient(#FDF411 20%,#0B8FBE 55%,#C90B6A 85%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -182,8 +174,8 @@ section:nth-child(odd) {
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
-  
 }
+
 .button:hover{
   background-color: rgb(219, 132, 33);
 }
