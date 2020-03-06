@@ -5,17 +5,33 @@
   font-family: 'Permanent Marker', cursive;
 }
 
+html{
+  background-image: url('images/blue-universe-956981.jpg');
+  background-size: contain;
+}
+
 body {
   font-family: "Open Sans", sans-serif; 
   font-size: 20px;
-  color: #444;
-  background-color: #D5D6D8;
+  color: white;
+  /* background-color: #D5D6D8; */
   text-align: center;
   line-height: 1.5;
 }
 
 .hero {
-  padding: 80px 0 80px;
+  display: block;
+  padding: 80px 0 0px;
+  /* height: 100vh; */
+}
+
+.heroInfo{
+  height: 90vh;
+  margin-top: 10vh;
+  font-size: 5vw;
+}
+.heroInfo h1 {
+ 
 }
 
 nav, footer {
@@ -42,7 +58,9 @@ nav, footer {
   font-family: 'Permanent Marker', cursive;
   font-size: 25px;
   font-weight: bold;
-  background: repeating-linear-gradient(#FDF411 20%,#0B8FBE 55%,#C90B6A 85%);
+  background-image: url('images/Sun\ \(2\).jpg');
+  background-size: cover;
+  /* background: repeating-linear-gradient(#FDF411 20%,#0B8FBE 55%,#C90B6A 85%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -63,7 +81,7 @@ nav, footer {
 }
 
 .burgerIcon:hover {
-  color: #0B8FBE;
+  color: rgb(219, 132, 33);;
 }
 .links a:hover {
   color: #0B8FBE;
@@ -94,34 +112,44 @@ li a {
 }
 
 h1 {
-  font-size: 32px;
+  /* font-size: 32px; */
   margin: 0px auto 30px;
-  max-width: 400px;
+  /* max-width: 400px; */
   text-align: center;
 }
 
 h2 {
   font-size: 26px;
+  background-image: url('images/Sun\ \(2\).jpg');
+  background-size: cover;
+  /* background: repeating-linear-gradient(#FDF411 20%,#0B8FBE 55%,#C90B6A 85%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header img {
   width: 80%;
+  opacity: .5;
 }
 
 section {
   min-height: 200px;
   padding: 5% 0;
-  background-color: #bbb;
+  margin: 10%;
+  background-color: black;
+  border-radius: 25px;
+  box-shadow: 0 0 50px 10px black;
+  opacity: 0.85;
 }
 
 section:nth-child(odd) {
-  background-color: #ddd;
+  background-color: black;
 }
 
 .bio p {
   text-align: left;
   margin: 0 auto 0;
-  padding: 0 15px;
+  padding: 0 40px;
   max-width: 900px;
   font-size: 16px;
 }
@@ -130,6 +158,7 @@ section:nth-child(odd) {
   display: block;
   margin: 0 auto 0;
   width: 80%;
+  opacity: 1;
 }
 
 .project p {
@@ -138,9 +167,17 @@ section:nth-child(odd) {
 
 .project a {
   padding: 0 20px 0;
+  text-decoration: none;
 }
+
+.project button {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
 footer .accent {
-  background: repeating-linear-gradient(#FDF411,#0B8FBE 70%,#C90B6A 80%);
+  background-image: url('images/Sun\ \(2\).jpg');
+  background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 25px;
@@ -149,6 +186,7 @@ footer {
   position: absolute;
   color: white;
   width: 100%;
+  height: auto;
   left: 0px;
   
 }
@@ -179,7 +217,8 @@ span.email {
 
 .links a:hover {
   font-family: 'Permanent Marker', cursive;
-  background: repeating-linear-gradient(#FDF411 20%,#0B8FBE 55%,#C90B6A 85%);
+  background-image: url('images/Sun\ \(2\).jpg');
+  background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -200,9 +239,16 @@ span.email {
     margin: 0 auto 0;
     width: 80%;
   }
+
   .name {
     font-weight: bold;
     float: left;
+  }
+
+  .heroInfo{
+    max-height: 90vh;
+    margin: 10vh 0;
+    font-size: 5vw;
   }
 
   .links {
@@ -248,6 +294,12 @@ span.email {
 @media screen and (min-width: 900px) {
   .bio p, .project p {
     font-size: 20px;
+  }
+
+  .heroInfo{
+    max-height: 100vh;
+    margin-top: 5vh;
+    font-size: 3vw;
   }
 
   h2 {

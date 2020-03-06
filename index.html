@@ -20,8 +20,8 @@
         <a role="navigation" class="burgerIcon" id="burger" onclick="burgerClick()"> &#9776; </a>
         <ul aria-live="polite" class="links" id="links" onclick="burgerClick()">
             <li><a class="jumper" href="#bio">About Me</a></li>
-            <li><a class="jumper" href="#contactMe">Contact</a></li>
             <li><a class="jumper" href="#portfolio">Portfolio</a></li>
+            <li><a class="jumper" href="#contactMe">Contact</a></li>
             <!-- <li><a href="https://github.com/mreichba" target="_blank">Github</a></li>
             <li><a href="https://www.linkedin.com/in/mason-reichbauer-145762101/" target="_blank">LinkedIn</a> -->
             </li>
@@ -30,10 +30,16 @@
 
     <main class="container">
         <header class="hero">
-            <h1>Hello, my name is <span class="accent">Mason</span> and I am a <span class="accent">Full-Stack
+            <!-- <h1>Hello, my name is <span class="accent">Mason</span> and I am a <span class="accent">Full-Stack
                     Engineer</span>.
-            </h1>
-            <img src="./images/right-brain-left-brain.png" alt="right brain vs. left brain">
+            </h1> -->
+            <div class="heroInfo">
+                <h1><span class="accent">Mason Reichbauer</span><br /></h1>
+                <h3><span class="accent">Full-Stack Engineer</span></h3>
+                <h3><span class="accent">Cloud Architect</span></h3>
+                <h3><span class="accent">Gamer</span></h3>
+            </div>
+            <!-- <img src="./images/right-brain-left-brain.png" alt="right brain vs. left brain"> -->
         </header>
 
         <section class="bio" id="bio">
@@ -61,37 +67,51 @@
             <h2>The Matrix Quiz App</h2>
             <p>A brief quiz testing your knowledge of The Matrix movies.</p>
             <img src="images/matrix-app-snapshot.PNG" alt="enter the matrix quiz">
-            <a target="_blank" href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/">Demo</a>
-            <a target="_blank" href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App">Code</a>
+            <button>
+                <a target="_blank" href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/">Demo</a>
+            </button>
+            <button>
+                <a target="_blank" href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App">Code</a>
+            </button>
             <p>HTML5, CSS3, JavaScript, JQuery</p>
         </section>
 
         <section class="project projectTwo">
-            <h2>Live Alert App</h2>
+            <h2>Live Alert</h2>
             <img src="images/live-alert-snip.png" alt="live alert app">
-            <a target="_blank" href="https://live-alert.now.sh/">Demo</a>
-            <a target="_blank"
-                href="https://github.com/thinkful-ei-iguana/mason-capstone-server-project-1">Server-Code</a>
-            <a target="_blank"
-                href="https://github.com/thinkful-ei-iguana/mason-capstone-react-app-project-1">Client-Code</a>
+            <button>
+                <a target="_blank" href="https://live-alert.now.sh/">Demo</a>
+            </button>
+            <button>
+                <a target="_blank"
+                    href="https://github.com/thinkful-ei-iguana/mason-capstone-server-project-1">Server-Code</a>
+            </button>
+            <button>
+                <a target="_blank"
+                    href="https://github.com/thinkful-ei-iguana/mason-capstone-react-app-project-1">Client-Code</a>
+            </button>
             <p>React, Babel, JSX, CSS3, Node, Express, PostgreSQL, Chai, Mocha, Supertest</p>
         </section>
 
         <section class="project projectThree">
             <h2>Language Learning (French)</h2>
             <img src="images/LearningLanguage.PNG" alt="Learning language">
-            <a target="_blank" href="https://mason-austin-learning.now.sh/register">Demo</a>
-            <a target="_blank" href="https://github.com/thinkful-ei-iguana/mason-austin-spaced-server">Server-Code</a>
-            <a target="_blank" href="https://github.com/thinkful-ei-iguana/mason-austin-spaced-client">Client-Code</a>
+            <button><a target="_blank" href="https://mason-austin-learning.now.sh/register">Demo</a></button>
+            <button><a target="_blank"
+                    href="https://github.com/thinkful-ei-iguana/mason-austin-spaced-server">Server-Code</a></button>
+            <button><a target="_blank"
+                    href="https://github.com/thinkful-ei-iguana/mason-austin-spaced-client">Client-Code</a></button>
             <p>React, Babel, JSX, CSS3, Node, Express, Linked List, PostgreSQL, Chai, Mocha, Supertest</p>
         </section>
 
         <section class="project projectFour">
             <h2>Someone Like You (SLY)</h2>
             <img src="images/SLY.PNG" alt="coming soon">
-            <a target="_blank" href="#">Demo</a>
-            <a target="_blank" href="https://github.com/thinkful-ei-iguana/MASK-SLY-API">Server-Code</a>
-            <a target="_blank" href="https://github.com/thinkful-ei-iguana/MASK-SLY-client">Client-Code</a>
+            <button><a target="_blank" href="https://someone-like-you.now.sh/">Demo</a></button>
+            <button><a target="_blank"
+                    href="https://github.com/thinkful-ei-iguana/MASK-SLY-API">Server-Code</a></button>
+            <button><a target="_blank"
+                    href="https://github.com/thinkful-ei-iguana/MASK-SLY-client">Client-Code</a></button>
             <p>React, Babel, JSX, CSS3, Node, Express, PostgreSQL, Chai, Mocha, Supertest</p>
         </section>
     </main>
