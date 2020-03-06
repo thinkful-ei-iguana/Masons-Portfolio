@@ -81,7 +81,7 @@ nav, footer {
 }
 
 .burgerIcon:hover {
-  color: rgb(219, 132, 33);;
+  color: rgb(219, 132, 33);
 }
 .links a:hover {
   color: #0B8FBE;
@@ -183,6 +183,9 @@ section:nth-child(odd) {
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
   
+}
+.button:hover{
+  background-color: rgb(219, 132, 33);
 }
 
 footer .accent {
