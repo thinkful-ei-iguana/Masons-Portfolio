@@ -29,7 +29,7 @@ body {
 }
 
 .heroInfo h2 {
- /* font-size: normal; */
+ font-size: 7vw;
 }
 
 .heroInfo{
@@ -306,6 +306,10 @@ span.email {
   .bio p, .project p {
     font-size: 20px;
   }
+
+  .heroInfo h2 {
+    font-size:4vw;
+   }
 
   .heroInfo{
     max-height: 100vh;
