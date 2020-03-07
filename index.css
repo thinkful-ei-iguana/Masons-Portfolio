@@ -4,6 +4,10 @@
 .accent, .project h2, .bio h2 {
   font-family: 'Permanent Marker', cursive;
 }
+.accent2 {
+  font-family: 'Permanent Marker', cursive;
+  
+}
 
 html{
   background-image: url('images/blue-universe-956981.jpg');
@@ -24,13 +28,14 @@ body {
   padding: 80px 0 0px;
 }
 
+.heroInfo h2 {
+ /* font-size: normal; */
+}
+
 .heroInfo{
   height: 90vh;
   margin-top: 10vh;
   font-size: 5vw;
-}
-.heroInfo h1 {
- 
 }
 
 nav, footer {
@@ -112,7 +117,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+section h2 {
   font-size: 26px;
   background-image: url('images/Sun\ \(2\).jpg');
   background-size: cover;
@@ -236,7 +241,7 @@ span.email {
     font-size: 18px;
   }
 
-  h2 {
+  section h2 {
     font-size: 28px;
   }
 
@@ -308,7 +313,7 @@ span.email {
     font-size: 3vw;
   }
 
-  h2 {
+  section h2 {
     font-size: 28px;
   }
 
