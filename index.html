@@ -17,7 +17,9 @@
         <div class="name">
             <a class="jumper" href="#bio">Mason Reichbauer</a>
         </div>
-        <a role="navigation" class="burgerIcon" id="burger" onclick="burgerClick()"> &#9776; </a>
+        <a tabindex="0" role="navigation" class="burgerIcon" id="burger" onkeypress="burgerClick()"
+            onclick="burgerClick()">
+            &#9776; </a>
         <ul aria-live="polite" class="links" id="links" onclick="burgerClick()">
             <li><a class="jumper" href="#bio">About Me</a></li>
             <li><a class="jumper" href="#portfolio">Portfolio</a></li>
